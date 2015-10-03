@@ -1,0 +1,380 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:open_robotics
+LIBS:kicad_usb-cache
+EELAYER 25 0
+EELAYER END
+$Descr User 7874 5906
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L FT232RL U1
+U 1 1 55F7A1DA
+P 3500 2300
+F 0 "U1" H 3050 3100 60  0000 C CNN
+F 1 "FT232RL" H 3800 3100 60  0000 C CNN
+F 2 "" H 3800 3100 60  0000 C CNN
+F 3 "" H 3800 3100 60  0000 C CNN
+	1    3500 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB_B P1
+U 1 1 55F7A238
+P 6450 2950
+F 0 "P1" V 6700 2850 50  0000 C CNN
+F 1 "USB_B" H 6400 3150 50  0000 C CNN
+F 2 "" V 6400 2850 60  0000 C CNN
+F 3 "" V 6400 2850 60  0000 C CNN
+	1    6450 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR1
+U 1 1 55F7A552
+P 4300 3550
+F 0 "#PWR1" H 4300 3300 50  0001 C CNN
+F 1 "GND" H 4300 3400 50  0000 C CNN
+F 2 "" H 4300 3550 60  0000 C CNN
+F 3 "" H 4300 3550 60  0000 C CNN
+	1    4300 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 55F7A56A
+P 5450 3250
+F 0 "C3" H 5475 3350 50  0000 L CNN
+F 1 "47pF" H 5475 3150 50  0000 L CNN
+F 2 "" H 5488 3100 30  0000 C CNN
+F 3 "" H 5450 3250 60  0000 C CNN
+	1    5450 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 55F7A5A9
+P 5800 3250
+F 0 "C4" H 5825 3350 50  0000 L CNN
+F 1 "47pF" H 5825 3150 50  0000 L CNN
+F 2 "" H 5838 3100 30  0000 C CNN
+F 3 "" H 5800 3250 60  0000 C CNN
+	1    5800 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 55F7A628
+P 6150 1850
+F 0 "C5" H 6175 1950 50  0000 L CNN
+F 1 "0.01uF" H 6175 1750 50  0000 L CNN
+F 2 "" H 6188 1700 30  0000 C CNN
+F 3 "" H 6150 1850 60  0000 C CNN
+	1    6150 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 55F7A657
+P 4450 3250
+F 0 "C2" H 4475 3350 50  0000 L CNN
+F 1 "0.1uF" H 4475 3150 50  0000 L CNN
+F 2 "" H 4488 3100 30  0000 C CNN
+F 3 "" H 4450 3250 60  0000 C CNN
+	1    4450 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR2
+U 1 1 55F7A8A8
+P 4450 1250
+F 0 "#PWR2" H 4450 1100 50  0001 C CNN
+F 1 "VCC" H 4450 1400 50  0000 C CNN
+F 2 "" H 4450 1250 60  0000 C CNN
+F 3 "" H 4450 1250 60  0000 C CNN
+	1    4450 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 55F7A8FE
+P 4750 2850
+F 0 "R2" V 4830 2850 50  0000 C CNN
+F 1 "27" V 4750 2850 50  0000 C CNN
+F 2 "" V 4680 2850 30  0000 C CNN
+F 3 "" H 4750 2850 30  0000 C CNN
+	1    4750 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 55F7A97F
+P 5200 2950
+F 0 "R4" V 5280 2950 50  0000 C CNN
+F 1 "27" V 5200 2950 50  0000 C CNN
+F 2 "" V 5130 2950 30  0000 C CNN
+F 3 "" H 5200 2950 30  0000 C CNN
+	1    5200 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 55F7A9EA
+P 5000 1900
+F 0 "R3" V 5080 1900 50  0000 C CNN
+F 1 "680" V 5000 1900 50  0000 C CNN
+F 2 "" V 4930 1900 30  0000 C CNN
+F 3 "" H 5000 1900 30  0000 C CNN
+	1    5000 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 55F7AA15
+P 5350 1900
+F 0 "R5" V 5430 1900 50  0000 C CNN
+F 1 "680" V 5350 1900 50  0000 C CNN
+F 2 "" V 5280 1900 30  0000 C CNN
+F 3 "" H 5350 1900 30  0000 C CNN
+	1    5350 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 55F7AA3E
+P 2450 2350
+F 0 "R1" V 2530 2350 50  0000 C CNN
+F 1 "10k" V 2450 2350 50  0000 C CNN
+F 2 "" V 2380 2350 30  0000 C CNN
+F 3 "" H 2450 2350 30  0000 C CNN
+	1    2450 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 55F7AD4E
+P 5000 1550
+F 0 "D1" H 5000 1650 50  0000 C CNN
+F 1 "TX" H 5000 1450 50  0000 C CNN
+F 2 "" H 5000 1550 60  0000 C CNN
+F 3 "" H 5000 1550 60  0000 C CNN
+	1    5000 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D2
+U 1 1 55F7ADCF
+P 5350 1550
+F 0 "D2" H 5350 1650 50  0000 C CNN
+F 1 "RX" H 5350 1450 50  0000 C CNN
+F 2 "" H 5350 1550 60  0000 C CNN
+F 3 "" H 5350 1550 60  0000 C CNN
+	1    5350 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D3
+U 1 1 55F7AE0C
+P 5700 1550
+F 0 "D3" H 5700 1650 50  0000 C CNN
+F 1 "POW" H 5700 1450 50  0000 C CNN
+F 2 "" H 5700 1550 60  0000 C CNN
+F 3 "" H 5700 1550 60  0000 C CNN
+	1    5700 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R6
+U 1 1 55F7B0F0
+P 5700 1900
+F 0 "R6" V 5780 1900 50  0000 C CNN
+F 1 "680" V 5700 1900 50  0000 C CNN
+F 2 "" V 5630 1900 30  0000 C CNN
+F 3 "" H 5700 1900 30  0000 C CNN
+	1    5700 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR_SMALL L1
+U 1 1 55F7B156
+P 5900 2750
+F 0 "L1" H 5900 2850 50  0000 C CNN
+F 1 "FERRITE BEAD" H 5900 2700 50  0000 C CNN
+F 2 "" H 5900 2750 60  0000 C CNN
+F 3 "" H 5900 2750 60  0000 C CNN
+	1    5900 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 55F7D82B
+P 2100 1750
+F 0 "C1" H 2125 1850 50  0000 L CNN
+F 1 "0.1uF" H 2125 1650 50  0000 L CNN
+F 2 "" H 2138 1600 30  0000 C CNN
+F 3 "" H 2100 1750 60  0000 C CNN
+	1    2100 1750
+	0    1    1    0   
+$EndComp
+Text Notes 3550 5150 0    60   ~ 0
+USB to serial adaptor
+Text Notes 4300 5300 0    60   ~ 0
+2015-09-14
+Text Notes 6750 5300 0    60   ~ 0
+1
+Text Notes 4650 4600 0    60   ~ 0
+max.prokopenko@gmail.com\nOpenRobotics.ca
+Wire Wire Line
+	4200 2450 4750 2450
+Wire Wire Line
+	4450 1250 4450 2450
+Wire Wire Line
+	2450 1950 2800 1950
+Wire Wire Line
+	4300 2650 4200 2650
+Wire Wire Line
+	4300 1850 4300 3550
+Wire Wire Line
+	2700 3400 6150 3400
+Wire Wire Line
+	4200 2750 4450 2750
+Wire Wire Line
+	4450 2750 4450 3100
+Wire Wire Line
+	4600 2850 4200 2850
+Wire Wire Line
+	5050 2950 4200 2950
+Wire Wire Line
+	4900 2850 6150 2850
+Wire Wire Line
+	5350 2950 6150 2950
+Wire Wire Line
+	5450 3100 5450 2850
+Connection ~ 5450 2850
+Wire Wire Line
+	5800 3100 5800 2950
+Connection ~ 5800 2950
+Connection ~ 4450 3400
+Connection ~ 5450 3400
+Wire Wire Line
+	6150 3400 6150 3050
+Connection ~ 5800 3400
+Connection ~ 4300 3400
+Wire Wire Line
+	5650 2750 4750 2750
+Wire Wire Line
+	4750 2750 4750 2450
+Connection ~ 4450 2450
+Connection ~ 4300 2650
+Wire Wire Line
+	4200 1950 4300 1950
+Connection ~ 4300 2350
+Wire Wire Line
+	4200 1850 4300 1850
+Connection ~ 4300 1950
+Wire Wire Line
+	6150 2350 6150 2000
+Wire Wire Line
+	6150 1350 6150 1700
+Connection ~ 4450 1350
+Wire Wire Line
+	5000 1350 5000 1350
+Connection ~ 5000 1350
+Wire Wire Line
+	5350 1350 5350 1350
+Connection ~ 5350 1350
+Wire Wire Line
+	5700 1350 5700 1350
+Connection ~ 5700 1350
+Wire Wire Line
+	2800 2250 2700 2250
+Wire Wire Line
+	2700 2250 2700 3400
+Wire Wire Line
+	2800 1750 2250 1750
+Wire Wire Line
+	4200 2350 6150 2350
+Wire Wire Line
+	5700 2050 5700 2350
+Connection ~ 5700 2350
+Wire Wire Line
+	5000 2150 5000 2050
+Wire Wire Line
+	4200 2150 5000 2150
+Wire Wire Line
+	4200 2250 5350 2250
+Wire Wire Line
+	5350 2250 5350 2050
+Connection ~ 2450 1950
+Wire Wire Line
+	2450 2500 2450 2950
+Wire Wire Line
+	2450 2950 2800 2950
+Wire Wire Line
+	2800 1650 1850 1650
+Wire Wire Line
+	1850 1650 1850 1950
+Wire Wire Line
+	1650 2850 2800 2850
+Wire Wire Line
+	1650 2850 1650 1850
+Text Label 1150 1950 0    60   ~ 0
+TX
+Text Label 1150 2050 0    60   ~ 0
+RX
+Text Label 1150 1850 0    60   ~ 0
+TXDEN
+Text Label 1150 1750 0    60   ~ 0
+PROGRAM
+Wire Wire Line
+	6150 1350 2450 1350
+Wire Wire Line
+	2450 1350 2450 2200
+Wire Wire Line
+	2800 2050 1150 2050
+Wire Wire Line
+	1850 1950 1150 1950
+Wire Wire Line
+	1650 1850 1150 1850
+Wire Wire Line
+	1150 1750 1950 1750
+Text Notes 5200 2600 0    60   ~ 0
+Omit ferrite bead for breadboard
+$EndSCHEMATC
