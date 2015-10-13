@@ -1,0 +1,76 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:open_robotics
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 7350 7500 0    60   ~ 0
+modular8_LED_display
+Text Notes 7150 6950 0    60   ~ 0
+P0003 - modular8 2x7-segment LED Display\nMax Prokopenko\nmax.prokopenko@gmail.com
+Text Notes 8100 7650 0    60   ~ 0
+October 8th, 2015\n
+Text Notes 10550 7650 0    60   ~ 0
+1
+$Comp
+L LED1642GWQTR U?
+U 1 1 56175C4A
+P 4050 3650
+F 0 "U?" H 4450 4350 60  0000 C CNN
+F 1 "LED1642GWQTR" H 4700 4250 60  0000 C CNN
+F 2 "" H 3900 3700 60  0000 C CNN
+F 3 "" H 3900 3700 60  0000 C CNN
+	1    4050 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L HDSP-523E U?
+U 1 1 56175CCA
+P 5950 3600
+F 0 "U?" H 6450 4000 60  0000 C CNN
+F 1 "HDSP-523E" H 6650 3900 60  0000 C CNN
+F 2 "" H 5950 4250 60  0000 C CNN
+F 3 "" H 5950 4250 60  0000 C CNN
+	1    5950 3600
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
