@@ -1,0 +1,556 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:open_robotics
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 7100 6900 0    118  ~ 0
+Drawn by: Brad MacNeil
+Text Notes 7350 7500 0    60   ~ 0
+modular8 Magnetic Potentiometer
+Text Notes 8200 7650 0    60   ~ 0
+Oct 17th 2015
+Text Notes 10600 7650 0    60   ~ 0
+1
+$Comp
+L AS5600 U1
+U 1 1 5622D2EA
+P 4050 3900
+F 0 "U1" H 4150 4550 60  0000 C CNN
+F 1 "AS5600" H 4250 4450 60  0000 C CNN
+F 2 "SMD_Packages:SOIC-8-N" H 4050 3900 60  0001 C CNN
+F 3 "" H 4050 3900 60  0000 C CNN
+	1    4050 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L modular8_rev3_interface_master J1
+U 1 1 5622D374
+P 2500 2250
+F 0 "J1" H 2000 2750 60  0000 C CNN
+F 1 "modular8_rev3_interface_master" H 2550 2650 60  0000 C CNN
+F 2 "Libraries - KiCAD:modular8_rev3_edge" H 2500 2250 60  0001 C CNN
+F 3 "" H 2500 2250 60  0000 C CNN
+	1    2500 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L modular8_rev3_interface_slave J2
+U 1 1 5622D39F
+P 5600 2300
+F 0 "J2" H 5100 2800 60  0000 C CNN
+F 1 "modular8_rev3_interface_slave" H 5650 2700 60  0000 C CNN
+F 2 "Libraries - KiCAD:modular8_rev3_edge" H 5600 2300 60  0001 C CNN
+F 3 "" H 5600 2300 60  0000 C CNN
+	1    5600 2300
+	1    0    0    -1  
+$EndComp
+Text Label 4650 2450 0    60   ~ 0
+SDA
+Text Label 4650 3700 0    60   ~ 0
+SDA
+Text Label 1700 2100 0    60   ~ 0
+SDA
+Text Label 6200 2550 0    60   ~ 0
+SCL
+Text Label 4650 3600 0    60   ~ 0
+SCL
+Text Label 3100 2000 0    60   ~ 0
+SCL
+$Comp
+L AP7313-33SAG-7 LDO1
+U 1 1 5622D43F
+P 4000 1300
+F 0 "LDO1" H 3850 1550 60  0000 C CNN
+F 1 "AP7313-33SAG-7" H 4000 1450 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 4000 1300 60  0001 C CNN
+F 3 "" H 4000 1300 60  0000 C CNN
+	1    4000 1300
+	1    0    0    -1  
+$EndComp
+Text Notes 3950 4000 0    60   ~ 0
+I2C 0110110 
+$Comp
+L C C1
+U 1 1 5622D561
+P 3500 1550
+F 0 "C1" H 3525 1650 50  0000 L CNN
+F 1 "0.1uF" H 3525 1450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3538 1400 30  0001 C CNN
+F 3 "" H 3500 1550 60  0000 C CNN
+	1    3500 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 5622D5D7
+P 4600 1550
+F 0 "C2" H 4625 1650 50  0000 L CNN
+F 1 "0.1uF" H 4625 1450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 4638 1400 30  0001 C CNN
+F 3 "" H 4600 1550 60  0000 C CNN
+	1    4600 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 5622D64B
+P 4950 1550
+F 0 "C3" H 4975 1650 50  0000 L CNN
+F 1 "10uF" H 4975 1450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 4988 1400 30  0001 C CNN
+F 3 "" H 4950 1550 60  0000 C CNN
+	1    4950 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 5622D855
+P 4000 1850
+F 0 "#PWR01" H 4000 1600 50  0001 C CNN
+F 1 "GND" H 4000 1700 50  0000 C CNN
+F 2 "" H 4000 1850 60  0000 C CNN
+F 3 "" H 4000 1850 60  0000 C CNN
+	1    4000 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5622D87C
+P 1400 2200
+F 0 "#PWR02" H 1400 1950 50  0001 C CNN
+F 1 "GND" H 1400 2050 50  0000 C CNN
+F 2 "" H 1400 2200 60  0000 C CNN
+F 3 "" H 1400 2200 60  0000 C CNN
+	1    1400 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 5622D89C
+P 3450 2300
+F 0 "#PWR03" H 3450 2050 50  0001 C CNN
+F 1 "GND" H 3450 2150 50  0000 C CNN
+F 2 "" H 3450 2300 60  0000 C CNN
+F 3 "" H 3450 2300 60  0000 C CNN
+	1    3450 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 5622D8BC
+P 4500 2250
+F 0 "#PWR04" H 4500 2000 50  0001 C CNN
+F 1 "GND" H 4500 2100 50  0000 C CNN
+F 2 "" H 4500 2250 60  0000 C CNN
+F 3 "" H 4500 2250 60  0000 C CNN
+	1    4500 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 5622D8DC
+P 6700 2350
+F 0 "#PWR05" H 6700 2100 50  0001 C CNN
+F 1 "GND" H 6700 2200 50  0000 C CNN
+F 2 "" H 6700 2350 60  0000 C CNN
+F 3 "" H 6700 2350 60  0000 C CNN
+	1    6700 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 5622D8FC
+P 3750 3900
+F 0 "#PWR06" H 3750 3650 50  0001 C CNN
+F 1 "GND" H 3750 3750 50  0000 C CNN
+F 2 "" H 3750 3900 60  0000 C CNN
+F 3 "" H 3750 3900 60  0000 C CNN
+	1    3750 3900
+	1    0    0    -1  
+$EndComp
+Text Label 5150 1300 0    60   ~ 0
+3v3
+Text Label 3650 3500 2    60   ~ 0
+3v3
+Text Label 3350 1300 2    60   ~ 0
+5V
+Wire Wire Line
+	4650 2450 5000 2450
+Wire Wire Line
+	1700 2100 1900 2100
+Wire Wire Line
+	3750 3900 3750 3800
+Wire Wire Line
+	3750 3800 3850 3800
+Wire Wire Line
+	3100 2300 3450 2300
+Wire Wire Line
+	5000 2350 4700 2350
+Wire Wire Line
+	4700 2350 4700 2250
+Wire Wire Line
+	4700 2250 4500 2250
+Wire Wire Line
+	6200 2250 6700 2250
+Wire Wire Line
+	6700 2250 6700 2350
+Wire Wire Line
+	1900 2200 1400 2200
+Wire Wire Line
+	4000 1650 4000 1850
+Wire Wire Line
+	4450 1300 5150 1300
+Wire Wire Line
+	3650 3500 3850 3500
+Wire Wire Line
+	3800 3500 3800 3600
+Wire Wire Line
+	3800 3600 3850 3600
+Connection ~ 3800 3500
+Wire Wire Line
+	4600 1400 4600 1300
+Connection ~ 4600 1300
+Wire Wire Line
+	3350 1300 3550 1300
+Wire Wire Line
+	3500 1400 3500 1300
+Connection ~ 3500 1300
+Wire Wire Line
+	3500 1800 4950 1800
+Connection ~ 4000 1800
+Text Label 1900 2000 2    60   ~ 0
+5V
+Text Label 3100 2500 0    60   ~ 0
+5V
+Text Label 6200 2050 0    60   ~ 0
+5V
+Text Label 5000 2550 2    60   ~ 0
+5V
+Wire Wire Line
+	4650 3500 5150 3500
+$Comp
+L R R10
+U 1 1 5622DEC0
+P 5150 3250
+F 0 "R10" V 5230 3250 50  0000 C CNN
+F 1 "10k" V 5150 3250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 5080 3250 30  0001 C CNN
+F 3 "" H 5150 3250 30  0000 C CNN
+	1    5150 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 3400 5150 3700
+Connection ~ 5150 3500
+Text Label 5150 3000 2    60   ~ 0
+3v3
+Wire Wire Line
+	5150 3100 5150 3000
+$Comp
+L GND #PWR07
+U 1 1 5622E0EB
+P 5150 4000
+F 0 "#PWR07" H 5150 3750 50  0001 C CNN
+F 1 "GND" H 5150 3850 50  0000 C CNN
+F 2 "" H 5150 4000 60  0000 C CNN
+F 3 "" H 5150 4000 60  0000 C CNN
+	1    5150 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 3800 5150 4000
+Wire Wire Line
+	4950 1400 4950 1300
+Connection ~ 4950 1300
+Wire Wire Line
+	4600 1800 4600 1700
+Wire Wire Line
+	4950 1800 4950 1700
+Connection ~ 4600 1800
+Wire Wire Line
+	3500 1700 3500 1800
+$Comp
+L R R9
+U 1 1 5622E36F
+P 3050 4650
+F 0 "R9" V 3130 4650 50  0000 C CNN
+F 1 "33k" V 3050 4650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 2980 4650 30  0001 C CNN
+F 3 "" H 3050 4650 30  0000 C CNN
+	1    3050 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 5622E4A0
+P 3050 3850
+F 0 "R8" V 3130 3850 50  0000 C CNN
+F 1 "20k" V 3050 3850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 2980 3850 30  0001 C CNN
+F 3 "" H 3050 3850 30  0000 C CNN
+	1    3050 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 3700 3050 3700
+$Comp
+L GND #PWR08
+U 1 1 5622E5F6
+P 3050 4850
+F 0 "#PWR08" H 3050 4600 50  0001 C CNN
+F 1 "GND" H 3050 4700 50  0000 C CNN
+F 2 "" H 3050 4850 60  0000 C CNN
+F 3 "" H 3050 4850 60  0000 C CNN
+	1    3050 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 4800 3050 4850
+Wire Wire Line
+	3050 4250 3050 4500
+Text Label 3200 2400 0    60   ~ 0
+X0
+Wire Wire Line
+	3200 2400 3100 2400
+Wire Wire Line
+	1650 4050 3050 4050
+Connection ~ 3050 4050
+$Comp
+L CONN_01X02 P2
+U 1 1 5622E861
+P 5350 3750
+F 0 "P2" H 5350 3900 50  0000 C CNN
+F 1 "CLKW" V 5450 3750 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 5350 3750 60  0001 C CNN
+F 3 "" H 5350 3750 60  0000 C CNN
+	1    5350 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P1
+U 1 1 5622E960
+P 3250 4200
+F 0 "P1" H 3250 4350 50  0000 C CNN
+F 1 "ASCALE" V 3350 4200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 3250 4200 60  0001 C CNN
+F 3 "" H 3250 4200 60  0000 C CNN
+	1    3250 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 4000 3050 4150
+Text Notes 3300 4650 0    60   ~ 0
+Connect jumper to scale \nanalog to 2.048V for \nmodular8 specs
+Text Notes 5600 3950 0    60   ~ 0
+Connect jumper to \nincrease angle with \nclockwise rotation\n
+$Comp
+L LED D1
+U 1 1 5622EB88
+P 1300 4400
+F 0 "D1" H 1300 4500 50  0000 C CNN
+F 1 "POW" H 1300 4300 50  0000 C CNN
+F 2 "LEDs:LED-0805" H 1300 4400 60  0001 C CNN
+F 3 "" H 1300 4400 60  0000 C CNN
+	1    1300 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R1
+U 1 1 5622ED36
+P 1300 3950
+F 0 "R1" V 1380 3950 50  0000 C CNN
+F 1 "680" V 1300 3950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 1230 3950 30  0001 C CNN
+F 3 "" H 1300 3950 30  0000 C CNN
+	1    1300 3950
+	1    0    0    -1  
+$EndComp
+Text Label 1300 3700 2    60   ~ 0
+3v3
+$Comp
+L GND #PWR09
+U 1 1 5622EE3D
+P 1300 4750
+F 0 "#PWR09" H 1300 4500 50  0001 C CNN
+F 1 "GND" H 1300 4600 50  0000 C CNN
+F 2 "" H 1300 4750 60  0000 C CNN
+F 3 "" H 1300 4750 60  0000 C CNN
+	1    1300 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 4100 1300 4200
+Wire Wire Line
+	1300 3700 1300 3800
+Wire Wire Line
+	1300 4750 1300 4600
+$Comp
+L R R4
+U 1 1 5622EFE6
+P 2050 3800
+F 0 "R4" V 2130 3800 50  0000 C CNN
+F 1 "0" V 2050 3800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 1980 3800 30  0001 C CNN
+F 3 "" H 2050 3800 30  0000 C CNN
+	1    2050 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5622F10E
+P 1850 3800
+F 0 "R3" V 1930 3800 50  0000 C CNN
+F 1 "0" V 1850 3800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 1780 3800 30  0001 C CNN
+F 3 "" H 1850 3800 30  0000 C CNN
+	1    1850 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5622F17A
+P 1650 3800
+F 0 "R2" V 1730 3800 50  0000 C CNN
+F 1 "0" V 1650 3800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 1580 3800 30  0001 C CNN
+F 3 "" H 1650 3800 30  0000 C CNN
+	1    1650 3800
+	1    0    0    -1  
+$EndComp
+Text Label 1650 3500 2    60   ~ 0
+X0
+$Comp
+L R R7
+U 1 1 5622F39B
+P 2650 3800
+F 0 "R7" V 2730 3800 50  0000 C CNN
+F 1 "0" V 2650 3800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 2580 3800 30  0001 C CNN
+F 3 "" H 2650 3800 30  0000 C CNN
+	1    2650 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R6
+U 1 1 5622F3A1
+P 2450 3800
+F 0 "R6" V 2530 3800 50  0000 C CNN
+F 1 "0" V 2450 3800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 2380 3800 30  0001 C CNN
+F 3 "" H 2450 3800 30  0000 C CNN
+	1    2450 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 5622F3A7
+P 2250 3800
+F 0 "R5" V 2330 3800 50  0000 C CNN
+F 1 "0" V 2250 3800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 2180 3800 30  0001 C CNN
+F 3 "" H 2250 3800 30  0000 C CNN
+	1    2250 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 4050 2650 3950
+Wire Wire Line
+	2450 4050 2450 3950
+Connection ~ 2650 4050
+Wire Wire Line
+	2250 4050 2250 3950
+Connection ~ 2450 4050
+Wire Wire Line
+	2050 4050 2050 3950
+Connection ~ 2250 4050
+Wire Wire Line
+	1850 4050 1850 3950
+Connection ~ 2050 4050
+Connection ~ 1850 4050
+Wire Wire Line
+	1650 4050 1650 3950
+Wire Wire Line
+	1650 3650 1650 3500
+Text Label 1850 3500 2    60   ~ 0
+X1
+Text Label 2050 3500 2    60   ~ 0
+X2
+Text Label 2250 3500 2    60   ~ 0
+X3
+Text Label 2450 3500 2    60   ~ 0
+X6
+Text Label 2650 3500 2    60   ~ 0
+X7
+Wire Wire Line
+	1850 3650 1850 3500
+Wire Wire Line
+	2050 3650 2050 3500
+Wire Wire Line
+	2250 3650 2250 3500
+Wire Wire Line
+	2450 3650 2450 3500
+Wire Wire Line
+	2650 3650 2650 3500
+Text Label 1900 2500 2    60   ~ 0
+X1
+Text Label 1900 2400 2    60   ~ 0
+X2
+Text Label 1900 2300 2    60   ~ 0
+X3
+Text Label 3100 2100 0    60   ~ 0
+X6
+Text Label 3100 2200 0    60   ~ 0
+X7
+Text Label 5000 2050 2    60   ~ 0
+X1
+Text Label 5000 2150 2    60   ~ 0
+X2
+Text Label 5000 2250 2    60   ~ 0
+X3
+Text Label 6200 2450 0    60   ~ 0
+X6
+Text Label 6200 2350 0    60   ~ 0
+X7
+Text Label 6200 2150 0    60   ~ 0
+X0
+$EndSCHEMATC
