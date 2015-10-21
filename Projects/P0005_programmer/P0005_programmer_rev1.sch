@@ -1,0 +1,350 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:open_robotics
+LIBS:P0005_programmer_rev1-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 7350 7500 0    60   ~ 0
+OpenRobotics AVR programmer
+Text Notes 8100 7650 0    60   ~ 0
+October 21st, 2015
+Text Notes 10550 7650 0    60   ~ 0
+1
+Text Notes 7100 7000 0    79   ~ 0
+Drawn by: Max Prokopenko\nmodular8.com/0005\nopenrobotics.ca
+$Comp
+L AT90USB162-M IC?
+U 1 1 56265CC9
+P 6400 3600
+F 0 "IC?" H 5500 4900 40  0000 L BNN
+F 1 "AT90USB162-M" H 6850 2300 40  0000 L BNN
+F 2 "MLF/QFN32" H 6400 3600 30  0000 C CIN
+F 3 "" H 6400 3600 60  0000 C CNN
+	1    6400 3600
+	1    0    0    -1  
+$EndComp
+Text Notes 6950 6450 0    79   ~ 0
+This is based of an open-source design by Olimex\nhttps://www.olimex.com/Products/AVR/Programmers/AVR-ISP-MK2/
+$Comp
+L USB_OTG P?
+U 1 1 56266182
+P 3550 3600
+F 0 "P?" H 3875 3475 50  0000 C CNN
+F 1 "USB_OTG" H 3550 3800 50  0000 C CNN
+F 2 "" V 3500 3500 60  0000 C CNN
+F 3 "" V 3500 3500 60  0000 C CNN
+	1    3550 3600
+	0    -1   1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 56266339
+P 3750 4750
+F 0 "C?" H 3775 4850 50  0000 L CNN
+F 1 "C" H 3775 4650 50  0000 L CNN
+F 2 "" H 3788 4600 30  0000 C CNN
+F 3 "" H 3750 4750 60  0000 C CNN
+	1    3750 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 56266385
+P 4100 4750
+F 0 "C?" H 4125 4850 50  0000 L CNN
+F 1 "1uF" H 4125 4650 50  0000 L CNN
+F 2 "" H 4138 4600 30  0000 C CNN
+F 3 "" H 4100 4750 60  0000 C CNN
+	1    4100 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 562663A2
+P 4450 4700
+F 0 "C?" H 4475 4800 50  0000 L CNN
+F 1 "1uF" H 4475 4600 50  0000 L CNN
+F 2 "" H 4488 4550 30  0000 C CNN
+F 3 "" H 4450 4700 60  0000 C CNN
+	1    4450 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 562663ED
+P 4950 4650
+F 0 "C?" H 4975 4750 50  0000 L CNN
+F 1 "0.1uF" H 4975 4550 50  0000 L CNN
+F 2 "" H 4988 4500 30  0000 C CNN
+F 3 "" H 4950 4650 60  0000 C CNN
+	1    4950 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 562664DE
+P 4850 3600
+F 0 "R?" V 4930 3600 50  0000 C CNN
+F 1 "27" V 4850 3600 50  0000 C CNN
+F 2 "" V 4780 3600 30  0000 C CNN
+F 3 "" H 4850 3600 30  0000 C CNN
+	1    4850 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 56266531
+P 4450 3700
+F 0 "R?" V 4530 3700 50  0000 C CNN
+F 1 "27" V 4450 3700 50  0000 C CNN
+F 2 "" V 4380 3700 30  0000 C CNN
+F 3 "" H 4450 3700 30  0000 C CNN
+	1    4450 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 5626699A
+P 3950 3300
+F 0 "#PWR?" H 3950 3150 50  0001 C CNN
+F 1 "+5V" H 3950 3440 50  0000 C CNN
+F 2 "" H 3950 3300 60  0000 C CNN
+F 3 "" H 3950 3300 60  0000 C CNN
+	1    3950 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56266B2A
+P 3950 3900
+F 0 "#PWR?" H 3950 3650 50  0001 C CNN
+F 1 "GND" H 3950 3750 50  0000 C CNN
+F 2 "" H 3950 3900 60  0000 C CNN
+F 3 "" H 3950 3900 60  0000 C CNN
+	1    3950 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 56266CCA
+P 5050 4150
+F 0 "C?" H 5075 4250 50  0000 L CNN
+F 1 "1uF" H 5075 4050 50  0000 L CNN
+F 2 "" H 5088 4000 30  0000 C CNN
+F 3 "" H 5050 4150 60  0000 C CNN
+	1    5050 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56266D54
+P 5250 4450
+F 0 "#PWR?" H 5250 4200 50  0001 C CNN
+F 1 "GND" H 5250 4300 50  0000 C CNN
+F 2 "" H 5250 4450 60  0000 C CNN
+F 3 "" H 5250 4450 60  0000 C CNN
+	1    5250 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56266DEE
+P 6400 5100
+F 0 "#PWR?" H 6400 4850 50  0001 C CNN
+F 1 "GND" H 6400 4950 50  0000 C CNN
+F 2 "" H 6400 5100 60  0000 C CNN
+F 3 "" H 6400 5100 60  0000 C CNN
+	1    6400 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR?
+U 1 1 56266E3F
+P 5250 3300
+F 0 "#PWR?" H 5250 3150 50  0001 C CNN
+F 1 "+3V3" H 5250 3440 50  0000 C CNN
+F 2 "" H 5250 3300 60  0000 C CNN
+F 3 "" H 5250 3300 60  0000 C CNN
+	1    5250 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR?
+U 1 1 562676C2
+P 6400 2100
+F 0 "#PWR?" H 6400 1950 50  0001 C CNN
+F 1 "+3V3" H 6400 2240 50  0000 C CNN
+F 2 "" H 6400 2100 60  0000 C CNN
+F 3 "" H 6400 2100 60  0000 C CNN
+	1    6400 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 562678B2
+P 2950 3300
+F 0 "C?" H 2975 3400 50  0000 L CNN
+F 1 "18pF" H 2975 3200 50  0000 L CNN
+F 2 "" H 2988 3150 30  0000 C CNN
+F 3 "" H 2950 3300 60  0000 C CNN
+	1    2950 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 56267907
+P 1950 3300
+F 0 "C?" H 1975 3400 50  0000 L CNN
+F 1 "18pF" H 1975 3200 50  0000 L CNN
+F 2 "" H 1988 3150 30  0000 C CNN
+F 3 "" H 1950 3300 60  0000 C CNN
+	1    1950 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L ABM8-16.000MHZ-10-1-U-T XTAL??
+U 1 1 56267B8B
+P 2450 3300
+F 0 "XTAL??" H 2450 3950 60  0000 C CNN
+F 1 "ABM8-16.000MHZ-10-1-U-T" H 2450 3850 60  0000 C CNN
+F 2 "" H 2450 3300 60  0000 C CNN
+F 3 "" H 2450 3300 60  0000 C CNN
+	1    2450 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 3400 3950 3400
+Wire Wire Line
+	3950 3400 3950 3300
+Wire Wire Line
+	3850 3600 4700 3600
+Wire Wire Line
+	5000 3600 5350 3600
+Wire Wire Line
+	3850 3500 4150 3500
+Wire Wire Line
+	4150 3500 4150 3700
+Wire Wire Line
+	4150 3700 4300 3700
+Wire Wire Line
+	4600 3700 5350 3700
+Wire Wire Line
+	3850 3800 3950 3800
+Wire Wire Line
+	3950 3800 3950 3900
+Wire Wire Line
+	5350 3950 5050 3950
+Wire Wire Line
+	5050 3950 5050 4000
+Wire Wire Line
+	5050 4300 5050 4450
+Wire Wire Line
+	5050 4450 5350 4450
+Wire Wire Line
+	5350 4450 5350 4150
+Connection ~ 5250 4450
+Wire Wire Line
+	6400 5100 6400 5000
+Wire Wire Line
+	5250 3300 5250 3400
+Wire Wire Line
+	5250 3400 5350 3400
+Wire Wire Line
+	6250 2200 6250 2100
+Wire Wire Line
+	6250 2100 6550 2100
+Wire Wire Line
+	6550 2100 6550 2200
+Connection ~ 6400 2100
+Wire Wire Line
+	2950 3150 2950 3050
+Wire Wire Line
+	2850 3050 5350 3050
+Wire Wire Line
+	2050 3050 1950 3050
+Wire Wire Line
+	1950 2850 1950 3150
+Wire Wire Line
+	1950 3450 1950 3650
+Wire Wire Line
+	1950 3650 2950 3650
+Wire Wire Line
+	2950 3650 2950 3450
+Wire Wire Line
+	2500 3550 2500 3650
+Connection ~ 2500 3650
+Wire Wire Line
+	2400 3550 2400 3650
+Connection ~ 2400 3650
+$Comp
+L GND #PWR?
+U 1 1 56268199
+P 2450 3750
+F 0 "#PWR?" H 2450 3500 50  0001 C CNN
+F 1 "GND" H 2450 3600 50  0000 C CNN
+F 2 "" H 2450 3750 60  0000 C CNN
+F 3 "" H 2450 3750 60  0000 C CNN
+	1    2450 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 3750 2450 3650
+Connection ~ 2450 3650
+Connection ~ 2950 3050
+Wire Wire Line
+	5350 2850 1950 2850
+Connection ~ 1950 3050
+Text Notes 3300 2800 0    59   ~ 0
+Minimize and equalize XTAL trace length
+$Comp
+L CONN_02X03 P?
+U 1 1 56268902
+P 8700 3300
+F 0 "P?" H 8700 3500 50  0000 C CNN
+F 1 "CONN_02X03" H 8700 3100 50  0000 C CNN
+F 2 "" H 8700 2100 60  0000 C CNN
+F 3 "" H 8700 2100 60  0000 C CNN
+	1    8700 3300
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
