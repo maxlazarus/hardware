@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:usb_adapter-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -28,7 +29,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:ft231x
 LIBS:open_robotics
 LIBS:usb_adapter-cache
 EELAYER 25 0
@@ -276,12 +276,12 @@ $EndComp
 $Comp
 L +5V #PWR2
 U 1 1 5622C0D5
-P 2550 2500
-F 0 "#PWR2" H 2550 2350 50  0001 C CNN
-F 1 "+5V" H 2550 2640 50  0000 C CNN
-F 2 "" H 2550 2500 60  0000 C CNN
-F 3 "" H 2550 2500 60  0000 C CNN
-	1    2550 2500
+P 2100 2600
+F 0 "#PWR2" H 2100 2450 50  0001 C CNN
+F 1 "+5V" H 2100 2740 50  0000 C CNN
+F 2 "" H 2100 2600 60  0000 C CNN
+F 3 "" H 2100 2600 60  0000 C CNN
+	1    2100 2600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -407,7 +407,7 @@ F 3 "" H 5500 1700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TE_1825058-1 U2
+L TE_1825058-1-RESCUE-usb_adapter U2
 U 1 1 5629AB3C
 P 6900 2400
 F 0 "U2" V 6850 2650 60  0000 C CNN
@@ -418,7 +418,7 @@ F 3 "" H 7010 2400 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L TE_1825058-1 U2
+L TE_1825058-1-RESCUE-usb_adapter U2
 U 2 1 5629ABC7
 P 9100 3550
 F 0 "U2" H 8900 3800 60  0000 C CNN
@@ -451,40 +451,30 @@ F 3 "" H 6900 2000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3350 3250 3350 3350
-Wire Wire Line
-	3350 3350 3350 3800
+	3350 3250 3350 3800
 Wire Wire Line
 	3350 3350 3450 3350
 Wire Wire Line
-	1850 3800 1850 4200
-Wire Wire Line
-	1850 4200 1850 4350
+	1850 3800 1850 4350
 Wire Wire Line
 	1850 3800 1550 3800
 Wire Wire Line
 	4000 4700 4000 4750
 Wire Wire Line
-	4000 4750 4050 4750
-Wire Wire Line
-	4050 4750 4100 4750
+	4000 4750 4100 4750
 Wire Wire Line
 	4100 4750 4100 4700
 Wire Wire Line
 	4050 4850 4050 4750
 Connection ~ 4050 4750
 Wire Wire Line
-	1550 3500 2450 3500
-Wire Wire Line
-	2450 3500 2500 3500
+	1550 3500 2500 3500
 Wire Wire Line
 	2800 3500 3450 3500
 Wire Wire Line
 	3450 3600 3150 3600
 Wire Wire Line
-	1550 3600 2800 3600
-Wire Wire Line
-	2800 3600 2850 3600
+	1550 3600 2850 3600
 Wire Wire Line
 	3350 3800 3450 3800
 Connection ~ 3350 3350
@@ -505,11 +495,7 @@ Connection ~ 2450 3500
 Wire Wire Line
 	2800 4200 2800 4100
 Wire Wire Line
-	1850 4200 2100 4200
-Wire Wire Line
-	2100 4200 2450 4200
-Wire Wire Line
-	2450 4200 2800 4200
+	1850 4200 2800 4200
 Connection ~ 1850 4200
 Wire Wire Line
 	2450 4100 2450 4200
@@ -519,11 +505,7 @@ Wire Wire Line
 Wire Wire Line
 	3450 1700 3450 1800
 Wire Wire Line
-	3100 1800 3450 1800
-Wire Wire Line
-	3450 1800 3650 1800
-Wire Wire Line
-	3650 1800 3850 1800
+	3100 1800 3850 1800
 Wire Wire Line
 	3850 1800 3850 1700
 Wire Wire Line
@@ -532,17 +514,11 @@ Connection ~ 3650 1800
 Wire Wire Line
 	5200 2000 5200 1850
 Wire Wire Line
-	5200 1850 5500 1850
-Wire Wire Line
-	5500 1850 5800 1850
-Wire Wire Line
-	5800 1850 6100 1850
+	5200 1850 6100 1850
 Wire Wire Line
 	5800 1850 5800 2000
 Wire Wire Line
-	5500 1700 5500 1850
-Wire Wire Line
-	5500 1850 5500 2000
+	5500 1700 5500 2000
 Connection ~ 5500 1850
 Wire Wire Line
 	5200 2300 5200 2400
@@ -568,9 +544,7 @@ Connection ~ 5800 1850
 Wire Wire Line
 	5200 2800 5200 2900
 Wire Wire Line
-	2100 3250 2100 3400
-Wire Wire Line
-	2100 3400 2100 3800
+	2100 3250 2100 3800
 Connection ~ 2100 3400
 Wire Wire Line
 	2100 4100 2100 4200
@@ -583,9 +557,7 @@ Connection ~ 3450 1800
 Wire Wire Line
 	3100 1400 3100 1300
 Wire Wire Line
-	3100 1300 3300 1300
-Wire Wire Line
-	3300 1300 3450 1300
+	3100 1300 3450 1300
 Wire Wire Line
 	3450 1300 3450 1400
 Wire Wire Line
@@ -608,9 +580,7 @@ Wire Wire Line
 Wire Wire Line
 	4800 4000 9250 4000
 Wire Wire Line
-	6900 2700 6900 2850
-Wire Wire Line
-	6900 2850 6900 3750
+	6900 2700 6900 3750
 Wire Wire Line
 	8600 2850 6900 2850
 Connection ~ 6900 2850
@@ -619,9 +589,7 @@ Wire Wire Line
 Wire Wire Line
 	9700 3000 9700 3100
 Wire Wire Line
-	9700 3400 9700 3550
-Wire Wire Line
-	9700 3550 9700 4000
+	9700 3400 9700 4000
 Wire Wire Line
 	9700 4000 9550 4000
 Connection ~ 9700 3550
@@ -703,6 +671,6 @@ Text Notes 9050 4300 0    60   ~ 0
 Arduino-compatible\nprogramming reset circuit
 Text Notes 7450 3950 0    60   ~ 0
 Standardized header
-Text Notes 6100 1850 0    60   ~ 0
+Text Notes 5950 1850 0    60   ~ 0
 Ensures that\ndevice is on
 $EndSCHEMATC
