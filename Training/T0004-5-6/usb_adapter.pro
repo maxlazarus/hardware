@@ -1,4 +1,4 @@
-update=10/22/2015 10:40:01 PM
+update=10/24/15 12:42:34 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,4 +59,4 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
-LibName31=C:/Users/Maxim/open_robotics/hardware/Libraries/KiCad/open_robotics
+LibName31=C:/Users/Jeremy/Documents/GitHub/hardware/Libraries/KiCad/open_robotics
