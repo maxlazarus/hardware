@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/loritahs/openrobotics/hardware/Training/T0004-5-6/usb_adapter.sch)
-    (date "2015年10月24日周六 01:30:02")
+    (date "2015年10月24日周六 01:10:02")
     (tool "Eeschema (2015-10-02 BZR 6241)-product")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -143,7 +143,6 @@
       (tstamp 5629AB3C))
     (comp (ref J1)
       (value modular8_rev3_comms_out)
-      (footprint open_robotics:modular8_rev3_edge)
       (libsource (lib open_robotics) (part modular8_rev3_comms_out))
       (sheetpath (names /) (tstamps /))
       (tstamp 5629AC49))
