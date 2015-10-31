@@ -671,6 +671,6 @@ Text Notes 9050 4300 0    60   ~ 0
 Arduino-compatible\nprogramming reset circuit
 Text Notes 7450 3950 0    60   ~ 0
 Standardized header
-Text Notes 6100 1850 0    60   ~ 0
+Text Notes 5950 1850 0    60   ~ 0
 Ensures that\ndevice is on
 $EndSCHEMATC
