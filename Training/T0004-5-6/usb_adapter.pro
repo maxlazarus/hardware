@@ -1,4 +1,4 @@
-update=10/24/2015 12:50:34 PM
+update=11/7/2015 2:39:11 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -61,3 +61,4 @@ LibName29=contrib
 LibName30=valves
 LibName31=C:/Users/Maxim/open_robotics/hardware/Libraries/KiCad/open_robotics
 LibName32=C:/Users/Carter/Documents/GitHub/OpenRobotics/hardware/hardware/Libraries/KiCad/open_robotics
+LibName33=C:/Users/Maxim/Documents/GitHub/openrobotics/hardware/Libraries/KiCad/open_robotics
