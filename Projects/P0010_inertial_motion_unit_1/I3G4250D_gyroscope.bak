@@ -28,7 +28,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:open_robotics
 LIBS:I3G4250D_gyroscope-cache
 EELAYER 25 0
 EELAYER END
@@ -770,4 +769,10 @@ Connection ~ 2250 3250
 Wire Wire Line
 	1650 3000 1650 3500
 Connection ~ 1650 3250
+Text Notes 7350 7500 0    60   ~ 0
+modular8 gyroscope and accelerometer breakout
+Text Notes 8150 7650 0    60   ~ 0
+November 13th, 2015
+Text Notes 10550 7650 0    60   ~ 0
+1
 $EndSCHEMATC

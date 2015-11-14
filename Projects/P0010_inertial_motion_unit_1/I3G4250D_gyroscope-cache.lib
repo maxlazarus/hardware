@@ -72,11 +72,11 @@ X SCL/SCLK 14 0 550 200 D 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# AP7313-33SAG-7
+# AP7313-33SAG-7-RESCUE-I3G4250D_gyroscope
 #
-DEF AP7313-33SAG-7 LDO 0 40 Y Y 1 F N
+DEF AP7313-33SAG-7-RESCUE-I3G4250D_gyroscope LDO 0 40 Y Y 1 F N
 F0 "LDO" -300 250 60 H V C CNN
-F1 "AP7313-33SAG-7" 0 150 60 H V C CNN
+F1 "AP7313-33SAG-7-RESCUE-I3G4250D_gyroscope" 0 150 60 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -221,7 +221,7 @@ ENDDEF
 # modular8_rev3_comms_in
 #
 DEF modular8_rev3_comms_in J 0 40 Y Y 1 F N
-F0 "J" 0 500 60 H V C CNN
+F0 "J" -350 500 60 H V C CNN
 F1 "modular8_rev3_comms_in" 50 400 60 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
@@ -242,11 +242,11 @@ X SCL 12 600 -250 200 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# modular8_rev3_comms_out
+# modular8_rev3_comms_out-RESCUE-I3G4250D_gyroscope
 #
-DEF modular8_rev3_comms_out J 0 40 Y Y 1 F N
+DEF modular8_rev3_comms_out-RESCUE-I3G4250D_gyroscope J 0 40 Y Y 1 F N
 F0 "J" -500 500 60 H V C CNN
-F1 "modular8_rev3_comms_out" 50 400 60 H V C CNN
+F1 "modular8_rev3_comms_out-RESCUE-I3G4250D_gyroscope" 50 400 60 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
