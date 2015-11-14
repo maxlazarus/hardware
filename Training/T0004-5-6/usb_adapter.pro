@@ -1,4 +1,4 @@
-update=10/22/2015 10:40:01 PM
+update=2015 November 14, Saturday 11:52:36
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,4 +59,4 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
-LibName31=C:/Users/Maxim/open_robotics/hardware/Libraries/KiCad/open_robotics
+LibName31=/Users/huanchengyang/Google Drive/MECH2/Open Robotics/hardware/Libraries/KiCad/open_robotics
