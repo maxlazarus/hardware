@@ -28,7 +28,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:open_robotics
 LIBS:I3G4250D_gyroscope-cache
 EELAYER 25 0
 EELAYER END
@@ -710,13 +709,13 @@ F 3 "" H 7750 5750 60  0000 C CNN
 	1    7750 5750
 	1    0    0    -1  
 $EndComp
-Text Label 8100 5400 0    60   ~ 0
-U1_INT1
-Text Label 8100 5500 0    60   ~ 0
-U1_INT2
-Text Label 8100 5600 0    60   ~ 0
-U2_INT1
 Text Label 8100 5700 0    60   ~ 0
+U1_INT1
+Text Label 8100 5600 0    60   ~ 0
+U1_INT2
+Text Label 8100 5400 0    60   ~ 0
+U2_INT1
+Text Label 8100 5500 0    60   ~ 0
 U2_INT2
 Wire Wire Line
 	8100 5700 7950 5700
@@ -770,4 +769,10 @@ Connection ~ 2250 3250
 Wire Wire Line
 	1650 3000 1650 3500
 Connection ~ 1650 3250
+Text Notes 7350 7500 0    60   ~ 0
+modular8 gyroscope and accelerometer breakout
+Text Notes 8150 7650 0    60   ~ 0
+November 13th, 2015
+Text Notes 10550 7650 0    60   ~ 0
+1
 $EndSCHEMATC
