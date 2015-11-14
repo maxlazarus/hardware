@@ -1,4 +1,4 @@
-update=10/22/2015 10:40:01 PM
+update=10/24/2015 12:43:30 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=../../Libraries/KiCad
 [eeschema/libraries]
 LibName1=usb_adapter-rescue
 LibName2=power
@@ -59,4 +59,4 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
-LibName31=C:/Users/Maxim/open_robotics/hardware/Libraries/KiCad/open_robotics
+LibName31=open_robotics
