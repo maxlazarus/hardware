@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:/Users/Maxim/Documents/GitHub/openrobotics/hardware/Projects/P0010_inertial_motion_unit_1/I3G4250D_gyroscope.sch)
-    (date "11/13/2015 10:55:09 PM")
+    (date "11/13/2015 11:06:51 PM")
     (tool "Eeschema 4.0.0-rc1-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -130,6 +130,17 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 560C23F8)))
   (libparts
+    (libpart (lib device) (part R)
+      (description Resistor)
+      (footprints
+        (fp R_*)
+        (fp Resistor_*))
+      (fields
+        (field (name Reference) R)
+        (field (name Value) R))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
     (libpart (lib open_robotics) (part modular8_rev3_comms_in)
       (fields
         (field (name Reference) J)
@@ -147,6 +158,74 @@
         (pin (num 10) (name TX/THRU) (type input))
         (pin (num 11) (name 5V) (type input))
         (pin (num 12) (name SCL) (type input))))
+    (libpart (lib device) (part LED)
+      (footprints
+        (fp LED-3MM)
+        (fp LED-5MM)
+        (fp LED-10MM)
+        (fp LED-0603)
+        (fp LED-0805)
+        (fp LED-1206)
+        (fp LEDV))
+      (fields
+        (field (name Reference) D)
+        (field (name Value) LED))
+      (pins
+        (pin (num 1) (name K) (type passive))
+        (pin (num 2) (name A) (type passive))))
+    (libpart (lib device) (part R_PACK4)
+      (description "4 resistors Pack")
+      (fields
+        (field (name Reference) RP)
+        (field (name Value) R_PACK4))
+      (pins
+        (pin (num 1) (name P1) (type passive))
+        (pin (num 2) (name P2) (type passive))
+        (pin (num 3) (name P3) (type passive))
+        (pin (num 4) (name P4) (type passive))
+        (pin (num 5) (name R4) (type passive))
+        (pin (num 6) (name R3) (type passive))
+        (pin (num 7) (name R2) (type passive))
+        (pin (num 8) (name R1) (type passive))))
+    (libpart (lib I3G4250D_gyroscope-rescue) (part modular8_rev3_comms_out-RESCUE-I3G4250D_gyroscope)
+      (fields
+        (field (name Reference) J)
+        (field (name Value) modular8_rev3_comms_out-RESCUE-I3G4250D_gyroscope))
+      (pins
+        (pin (num 1) (name 5V) (type input))
+        (pin (num 2) (name SCL) (type input))
+        (pin (num 3) (name SDA) (type input))
+        (pin (num 4) (name RX/THRU) (type input))
+        (pin (num 5) (name GND) (type input))
+        (pin (num 6) (name TX) (type input))
+        (pin (num 7) (name ~SS) (type input))
+        (pin (num 8) (name GND) (type input))
+        (pin (num 9) (name SCK) (type input))
+        (pin (num 10) (name MOSI) (type input))
+        (pin (num 11) (name MISO) (type input))
+        (pin (num 12) (name 5V) (type input))))
+    (libpart (lib I3G4250D_gyroscope-rescue) (part AP7313-33SAG-7-RESCUE-I3G4250D_gyroscope)
+      (fields
+        (field (name Reference) LDO)
+        (field (name Value) AP7313-33SAG-7-RESCUE-I3G4250D_gyroscope))
+      (pins
+        (pin (num 1) (name IN) (type input))
+        (pin (num 2) (name OUT) (type input))
+        (pin (num 3) (name GND) (type input))))
+    (libpart (lib device) (part C)
+      (description "Unpolarized capacitor")
+      (footprints
+        (fp C?)
+        (fp C_????_*)
+        (fp C_????)
+        (fp SMD*_c)
+        (fp Capacitor*))
+      (fields
+        (field (name Reference) C)
+        (field (name Value) C))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
     (libpart (lib open_robotics) (part ADXL343)
       (fields
         (field (name Reference) U)
@@ -186,93 +265,14 @@
         (pin (num 13) (name GND) (type input))
         (pin (num 14) (name PLLFILT) (type input))
         (pin (num 15) (name RES/VDD) (type input))
-        (pin (num 16) (name VDD) (type input))))
-    (libpart (lib I3G4250D_gyroscope-rescue) (part AP7313-33SAG-7-RESCUE-I3G4250D_gyroscope)
-      (fields
-        (field (name Reference) LDO)
-        (field (name Value) AP7313-33SAG-7-RESCUE-I3G4250D_gyroscope))
-      (pins
-        (pin (num 1) (name IN) (type input))
-        (pin (num 2) (name OUT) (type input))
-        (pin (num 3) (name GND) (type input))))
-    (libpart (lib I3G4250D_gyroscope-rescue) (part modular8_rev3_comms_out-RESCUE-I3G4250D_gyroscope)
-      (fields
-        (field (name Reference) J)
-        (field (name Value) modular8_rev3_comms_out-RESCUE-I3G4250D_gyroscope))
-      (pins
-        (pin (num 1) (name 5V) (type input))
-        (pin (num 2) (name SCL) (type input))
-        (pin (num 3) (name SDA) (type input))
-        (pin (num 4) (name RX/THRU) (type input))
-        (pin (num 5) (name GND) (type input))
-        (pin (num 6) (name TX) (type input))
-        (pin (num 7) (name ~SS) (type input))
-        (pin (num 8) (name GND) (type input))
-        (pin (num 9) (name SCK) (type input))
-        (pin (num 10) (name MOSI) (type input))
-        (pin (num 11) (name MISO) (type input))
-        (pin (num 12) (name 5V) (type input))))
-    (libpart (lib device) (part C)
-      (description "Unpolarized capacitor")
-      (footprints
-        (fp C?)
-        (fp C_????_*)
-        (fp C_????)
-        (fp SMD*_c)
-        (fp Capacitor*))
-      (fields
-        (field (name Reference) C)
-        (field (name Value) C))
-      (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive))))
-    (libpart (lib device) (part LED)
-      (footprints
-        (fp LED-3MM)
-        (fp LED-5MM)
-        (fp LED-10MM)
-        (fp LED-0603)
-        (fp LED-0805)
-        (fp LED-1206)
-        (fp LEDV))
-      (fields
-        (field (name Reference) D)
-        (field (name Value) LED))
-      (pins
-        (pin (num 1) (name K) (type passive))
-        (pin (num 2) (name A) (type passive))))
-    (libpart (lib device) (part R)
-      (description Resistor)
-      (footprints
-        (fp R_*)
-        (fp Resistor_*))
-      (fields
-        (field (name Reference) R)
-        (field (name Value) R))
-      (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive))))
-    (libpart (lib device) (part R_PACK4)
-      (description "4 resistors Pack")
-      (fields
-        (field (name Reference) RP)
-        (field (name Value) R_PACK4))
-      (pins
-        (pin (num 1) (name P1) (type passive))
-        (pin (num 2) (name P2) (type passive))
-        (pin (num 3) (name P3) (type passive))
-        (pin (num 4) (name P4) (type passive))
-        (pin (num 5) (name R4) (type passive))
-        (pin (num 6) (name R3) (type passive))
-        (pin (num 7) (name R2) (type passive))
-        (pin (num 8) (name R1) (type passive)))))
+        (pin (num 16) (name VDD) (type input)))))
   (libraries
-    (library (logical I3G4250D_gyroscope-rescue)
-      (uri C:\Users\Maxim\Documents\GitHub\openrobotics\hardware\Projects\P0010_inertial_motion_unit_1\I3G4250D_gyroscope-rescue.lib))
+    (library (logical open_robotics)
+      (uri C:\Users\Maxim\Documents\GitHub\openrobotics\hardware\Libraries\KiCad\open_robotics.lib))
     (library (logical device)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib"))
-    (library (logical open_robotics)
-      (uri C:\Users\Maxim\Documents\GitHub\openrobotics\hardware\Libraries\KiCad\open_robotics.lib)))
+    (library (logical I3G4250D_gyroscope-rescue)
+      (uri C:\Users\Maxim\Documents\GitHub\openrobotics\hardware\Projects\P0010_inertial_motion_unit_1\I3G4250D_gyroscope-rescue.lib)))
   (nets
     (net (code 1) (name +3.3VP)
       (node (ref LDO1) (pin 2))
