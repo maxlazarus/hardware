@@ -28,8 +28,8 @@ LIBS:siliconi
 LIBS:opto
 LIBS:atmel
 LIBS:contrib
-LIBS:open_robotics
 LIBS:valves
+LIBS:open_robotics
 LIBS:usb_adapter-cache
 EELAYER 25 0
 EELAYER END
@@ -53,17 +53,6 @@ Text Notes 7445 6465 0    60   ~ 0
 October 17th, 2015
 Text Notes 9885 6465 0    60   ~ 0
 1
-$Comp
-L FT231X U1
-U 1 1 5622A3C5
-P 4050 3600
-F 0 "U1" H 3700 4100 60  0000 C CNN
-F 1 "FT231X" H 3800 4000 60  0000 C CNN
-F 2 "Housings_DFN_QFN:QFN-20-1EP_4x4mm_Pitch0.5mm" H 4000 4100 60  0001 C CNN
-F 3 "" H 4000 4100 60  0000 C CNN
-	1    4050 3600
-	1    0    0    -1  
-$EndComp
 $Comp
 L R R2
 U 1 1 5622A6B9
@@ -407,39 +396,6 @@ F 3 "" H 5500 1700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TE_1825058-1-RESCUE-usb_adapter U2
-U 1 1 5629AB3C
-P 6900 2400
-F 0 "U2" V 6850 2650 60  0000 C CNN
-F 1 "TE_1825058-1" V 6950 2900 60  0000 C CNN
-F 2 "open_robotics:DIPSWITCH_SMT_ALCO_2CCT" H 7010 2400 60  0001 C CNN
-F 3 "" H 7010 2400 60  0000 C CNN
-	1    6900 2400
-	0    1    1    0   
-$EndComp
-$Comp
-L TE_1825058-1-RESCUE-usb_adapter U2
-U 2 1 5629ABC7
-P 9100 3550
-F 0 "U2" H 8900 3800 60  0000 C CNN
-F 1 "TE_1825058-1" H 9150 3700 60  0000 C CNN
-F 2 "open_robotics:DIPSWITCH_SMT_ALCO_2CCT" H 9210 3550 60  0001 C CNN
-F 3 "" H 9210 3550 60  0000 C CNN
-	2    9100 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L modular8_rev3_comms_out J1
-U 1 1 5629AC49
-P 7900 3500
-F 0 "J1" H 8250 4000 60  0000 C CNN
-F 1 "modular8_rev3_comms_out" H 7950 3900 60  0000 C CNN
-F 2 "open_robotics:modular8_rev3_edge" H 7900 3500 60  0001 C CNN
-F 3 "" H 7900 3500 60  0000 C CNN
-	1    7900 3500
-	-1   0    0    -1  
-$EndComp
-$Comp
 L +5V #PWR012
 U 1 1 5629BADF
 P 6900 2000
@@ -461,7 +417,7 @@ Wire Wire Line
 Wire Wire Line
 	4000 4700 4000 4750
 Wire Wire Line
-	4000 4750 4100 4750
+	3900 4750 4100 4750
 Wire Wire Line
 	4100 4750 4100 4700
 Wire Wire Line
@@ -673,4 +629,51 @@ Text Notes 7450 3950 0    60   ~ 0
 Standardized header
 Text Notes 5950 1850 0    60   ~ 0
 Ensures that\ndevice is on
+$Comp
+L modular8_rev3_comms_out J1
+U 1 1 5629AC49
+P 7900 3500
+F 0 "J1" H 8250 4000 60  0000 C CNN
+F 1 "modular8_rev3_comms_out" H 7950 3900 60  0000 C CNN
+F 2 "open_robotics:modular8_rev3_edge" H 7900 3500 60  0001 C CNN
+F 3 "" H 7900 3500 60  0000 C CNN
+	1    7900 3500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L FT231XQ U1
+U 1 1 565D1F15
+P 4050 3600
+F 0 "U1" H 3700 4100 60  0000 C CNN
+F 1 "FT231XQ" H 3800 4000 60  0000 C CNN
+F 2 "Housings_DFN_QFN:QFN-20-1EP_4x4mm_Pitch0.5mm" H 4000 4100 60  0001 C CNN
+F 3 "" H 4000 4100 60  0000 C CNN
+	1    4050 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 4750 3900 4700
+Connection ~ 4000 4750
+$Comp
+L TE_1825058-1 U2
+U 1 1 565D260C
+P 6900 2400
+F 0 "U2" H 6650 2700 60  0000 C CNN
+F 1 "TE_1825058-1" H 6900 2600 60  0000 C CNN
+F 2 "open_robotics:DIPSWITCH_SMT_ALCO_2CCT" H 7010 2400 60  0001 C CNN
+F 3 "" H 7010 2400 60  0000 C CNN
+	1    6900 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TE_1825058-1 U2
+U 2 1 565D26CD
+P 9100 3550
+F 0 "U2" H 8850 3850 60  0000 C CNN
+F 1 "TE_1825058-1" H 9100 3750 60  0000 C CNN
+F 2 "open_robotics:DIPSWITCH_SMT_ALCO_2CCT" H 9210 3550 60  0001 C CNN
+F 3 "" H 9210 3550 60  0000 C CNN
+	2    9100 3550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
