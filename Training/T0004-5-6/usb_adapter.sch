@@ -630,17 +630,6 @@ Standardized header
 Text Notes 5950 1850 0    60   ~ 0
 Ensures that\ndevice is on
 $Comp
-L modular8_rev3_comms_out J1
-U 1 1 5629AC49
-P 7900 3500
-F 0 "J1" H 8250 4000 60  0000 C CNN
-F 1 "modular8_rev3_comms_out" H 7950 3900 60  0000 C CNN
-F 2 "open_robotics:modular8_rev3_edge" H 7900 3500 60  0001 C CNN
-F 3 "" H 7900 3500 60  0000 C CNN
-	1    7900 3500
-	-1   0    0    -1  
-$EndComp
-$Comp
 L FT231XQ U1
 U 1 1 565D1F15
 P 4050 3600
@@ -675,5 +664,16 @@ F 2 "open_robotics:DIPSWITCH_SMT_ALCO_2CCT" H 9210 3550 60  0001 C CNN
 F 3 "" H 9210 3550 60  0000 C CNN
 	2    9100 3550
 	1    0    0    -1  
+$EndComp
+$Comp
+L modular8_rev3_comms_out J1
+U 1 1 565D3C5D
+P 7900 3500
+F 0 "J1" H 7400 4000 60  0000 C CNN
+F 1 "modular8_rev3_comms_out" H 7950 3900 60  0000 C CNN
+F 2 "open_robotics:modular8_rev3_edge" H 7900 3500 60  0001 C CNN
+F 3 "" H 7900 3500 60  0000 C CNN
+	1    7900 3500
+	-1   0    0    -1  
 $EndComp
 $EndSCHEMATC

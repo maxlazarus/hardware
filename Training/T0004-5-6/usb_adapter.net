@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:/Users/Maxim/Documents/GitHub/openrobotics/hardware/Training/T0004-5-6/usb_adapter.sch)
-    (date "11/30/2015 8:09:21 PM")
+    (date "11/30/2015 9:06:19 PM")
     (tool "Eeschema 4.0.0-rc1-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -154,53 +154,6 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 565D260C)))
   (libparts
-    (libpart (lib device) (part INDUCTOR_SMALL)
-      (fields
-        (field (name Reference) L)
-        (field (name Value) INDUCTOR_SMALL))
-      (pins
-        (pin (num 1) (name 1) (type input))
-        (pin (num 2) (name 2) (type input))))
-    (libpart (lib conn) (part USB_OTG)
-      (description "micro/mini connector")
-      (footprints
-        (fp USB*))
-      (fields
-        (field (name Reference) P)
-        (field (name Value) USB_OTG))
-      (pins
-        (pin (num 1) (name VCC) (type power_out))
-        (pin (num 2) (name D-) (type passive))
-        (pin (num 3) (name D+) (type passive))
-        (pin (num 4) (name ID) (type power_in))
-        (pin (num 5) (name GND) (type power_in))
-        (pin (num 6) (name shield) (type passive))))
-    (libpart (lib device) (part R)
-      (description Resistor)
-      (footprints
-        (fp R_*)
-        (fp Resistor_*))
-      (fields
-        (field (name Reference) R)
-        (field (name Value) R))
-      (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive))))
-    (libpart (lib device) (part LED)
-      (footprints
-        (fp LED-3MM)
-        (fp LED-5MM)
-        (fp LED-10MM)
-        (fp LED-0603)
-        (fp LED-0805)
-        (fp LED-1206)
-        (fp LEDV))
-      (fields
-        (field (name Reference) D)
-        (field (name Value) LED))
-      (pins
-        (pin (num 1) (name K) (type passive))
-        (pin (num 2) (name A) (type passive))))
     (libpart (lib open_robotics) (part FT231XQ)
       (footprints
         (fp QFN-20-1EP_4x4mm_Pitch0.5mm))
@@ -272,14 +225,61 @@
         (field (name Value) C))
       (pins
         (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
+    (libpart (lib conn) (part USB_OTG)
+      (description "micro/mini connector")
+      (footprints
+        (fp USB*))
+      (fields
+        (field (name Reference) P)
+        (field (name Value) USB_OTG))
+      (pins
+        (pin (num 1) (name VCC) (type power_out))
+        (pin (num 2) (name D-) (type passive))
+        (pin (num 3) (name D+) (type passive))
+        (pin (num 4) (name ID) (type power_in))
+        (pin (num 5) (name GND) (type power_in))
+        (pin (num 6) (name shield) (type passive))))
+    (libpart (lib device) (part INDUCTOR_SMALL)
+      (fields
+        (field (name Reference) L)
+        (field (name Value) INDUCTOR_SMALL))
+      (pins
+        (pin (num 1) (name 1) (type input))
+        (pin (num 2) (name 2) (type input))))
+    (libpart (lib device) (part LED)
+      (footprints
+        (fp LED-3MM)
+        (fp LED-5MM)
+        (fp LED-10MM)
+        (fp LED-0603)
+        (fp LED-0805)
+        (fp LED-1206)
+        (fp LEDV))
+      (fields
+        (field (name Reference) D)
+        (field (name Value) LED))
+      (pins
+        (pin (num 1) (name K) (type passive))
+        (pin (num 2) (name A) (type passive))))
+    (libpart (lib device) (part R)
+      (description Resistor)
+      (footprints
+        (fp R_*)
+        (fp Resistor_*))
+      (fields
+        (field (name Reference) R)
+        (field (name Value) R))
+      (pins
+        (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive)))))
   (libraries
-    (library (logical open_robotics)
-      (uri C:\Users\Maxim\Documents\GitHub\openrobotics\hardware\Libraries\KiCad\open_robotics.lib))
     (library (logical device)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib"))
     (library (logical conn)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\conn.lib")))
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\conn.lib"))
+    (library (logical open_robotics)
+      (uri C:\Users\Maxim\Documents\GitHub\openrobotics\hardware\Libraries\KiCad\open_robotics.lib)))
   (nets
     (net (code 1) (name "Net-(C7-Pad1)")
       (node (ref U1) (pin 18))
