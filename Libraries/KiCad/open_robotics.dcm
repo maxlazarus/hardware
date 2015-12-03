@@ -1,3 +1,15 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 22-05-7045
+D 4-pin male connector - PCB mount header
+K Connector Dynamixel
+F C:/Users/Maxim/Documents/GitHub/openrobotics/hardware/Datasheets/022057045_sd.pdf
+$ENDCMP
+#
+$CMP SN65176BDR
+D Differential TX/RX bus driver/receiver
+K RS485
+F C:/Users/Maxim/Documents/GitHub/openrobotics/hardware/Datasheets/sn65176b.pdf
+$ENDCMP
+#
 #End Doc Library
