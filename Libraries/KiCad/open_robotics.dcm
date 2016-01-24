@@ -1,9 +1,51 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 22-03-5035
+D 3-pin male vert connector - PCB mount header
+K Connector Dynamixel Vertical
+F C:/Users/Maxim/Documents/GitHub/openrobotics/hardware/Datasheets/022057045_sd.pdf
+$ENDCMP
+#
+$CMP 22-03-5045
+D 4-pin male connector - PCB mount header
+K Connector Dynamixel
+F C:/Users/Maxim/Documents/GitHub/openrobotics/hardware/Datasheets/022057045_sd.pdf
+$ENDCMP
+#
+$CMP 22-05-7035
+D 3-pin male right angle connector - PCB mount header
+K Connector Dynamixel Right-angle
+F C:/Users/Maxim/Documents/GitHub/openrobotics/hardware/Datasheets/022057045_sd.pdf
+$ENDCMP
+#
 $CMP 22-05-7045
 D 4-pin male connector - PCB mount header
 K Connector Dynamixel
 F C:/Users/Maxim/Documents/GitHub/openrobotics/hardware/Datasheets/022057045_sd.pdf
+$ENDCMP
+#
+$CMP 70553-0037
+D 3-pin male right angle connector - PCB mount header
+K Connector SL Molex Right-angle
+F C:/Users/Maxim/Documents/GitHub/openrobotics/hardware/Datasheets/705530037_sd.pdf
+$ENDCMP
+#
+$CMP AP7313-33SAG-7
+D 3.3V regulator 150mA max 6V input
+K Regulator
+F C:/Users/Maxim/Documents/GitHub/openrobotics/hardware/Datasheets/AP7313.pdf
+$ENDCMP
+#
+$CMP L4941BDT-TR
+D 5V regulator 1A max 30V input
+K Regulator
+F C:/Users/Maxim/Documents/GitHub/openrobotics/hardware/Datasheets/STMicroelectronics-L4941BDT-TR-datasheet.pdf
+$ENDCMP
+#
+$CMP LP2992
+D 5V regulator 250mA max 16V input
+K Regulator
+F C:/Users/Maxim/Documents/GitHub/openrobotics/hardware/Datasheets/lp2992.pdf
 $ENDCMP
 #
 $CMP SN65176BDR
