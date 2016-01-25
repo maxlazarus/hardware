@@ -1,27 +1,32 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 1825058-1
+D 2x SPST NO surface mount DIP switch
+K Switch
+$ENDCMP
+#
 $CMP 22-03-5035
 D 3-pin male vert connector - PCB mount header
 K Connector Dynamixel Vertical
-F C:/Users/Maxim/Documents/GitHub/openrobotics/hardware/Datasheets/022057045_sd.pdf
+F ../../Datasheets/022057045_sd.pdf
 $ENDCMP
 #
 $CMP 22-03-5045
 D 4-pin male connector - PCB mount header
 K Connector Dynamixel
-F C:/Users/Maxim/Documents/GitHub/openrobotics/hardware/Datasheets/022057045_sd.pdf
+F ../../Datasheets/022057045_sd.pdf
 $ENDCMP
 #
 $CMP 22-05-7035
 D 3-pin male right angle connector - PCB mount header
 K Connector Dynamixel Right-angle
-F C:/Users/Maxim/Documents/GitHub/openrobotics/hardware/Datasheets/022057045_sd.pdf
+F ../../Datasheets/022057045_sd.pdf
 $ENDCMP
 #
 $CMP 22-05-7045
 D 4-pin male connector - PCB mount header
 K Connector Dynamixel
-F C:/Users/Maxim/Documents/GitHub/openrobotics/hardware/Datasheets/022057045_sd.pdf
+F ../../Datasheets/022057045_sd.pdf
 $ENDCMP
 #
 $CMP 70553-0037
@@ -30,22 +35,66 @@ K Connector SL Molex Right-angle
 F C:/Users/Maxim/Documents/GitHub/openrobotics/hardware/Datasheets/705530037_sd.pdf
 $ENDCMP
 #
+$CMP ABM8-16.000MHZ-10-1-U-T
+D Crystal 16 MHz SMD
+K Crystal
+$ENDCMP
+#
 $CMP AP7313-33SAG-7
 D 3.3V regulator 150mA max 6V input
 K Regulator
-F C:/Users/Maxim/Documents/GitHub/openrobotics/hardware/Datasheets/AP7313.pdf
+F ../../Datasheets/AP7313.pdf
+$ENDCMP
+#
+$CMP L4941BDT-TR
+D 5V regulator 1A max 30V input
+K Regulator
+F ../../Datasheets/STMicroelectronics-L4941BDT-TR-datasheet.pdf
+$ENDCMP
+#
+$CMP LM4040D20IDBZR
+D Reference voltage 2.048 V
+K Voltage Reference
 $ENDCMP
 #
 $CMP LP2992
 D 5V regulator 250mA max 16V input
 K Regulator
-F C:/Users/Maxim/Documents/GitHub/openrobotics/hardware/Datasheets/lp2992.pdf
+F ../../Datasheets/lp2992.pdf
+$ENDCMP
+#
+$CMP LTST-C170KFKT
+D LED green
+K LED
+$ENDCMP
+#
+$CMP LTST-C170KGKT
+D LED green
+K LED
+$ENDCMP
+#
+$CMP NC7ST32
+D Single OR gate
+K OR Logic
+F ../../Datasheets/Fairchild_Semiconductor-NC7ST32M5X-datasheet.pdf
+$ENDCMP
+#
+$CMP NC7ST32M5X
+D Single OR gate
+K OR Logic
+F ../../Datasheets/Fairchild_Semiconductor-NC7ST32M5X-datasheet.pdf
 $ENDCMP
 #
 $CMP SN65176BDR
 D Differential TX/RX bus driver/receiver
 K RS485
-F C:/Users/Maxim/Documents/GitHub/openrobotics/hardware/Datasheets/sn65176b.pdf
+F ../../Datasheets/sn65176b.pdf
+$ENDCMP
+#
+$CMP TC7W241FUTE12LF
+D 2-element non-inverting open-collector buffer
+K Buffer Open-collector
+F ../../Datasheets/TC7W241FU_datasheet_en_20141118.pdf
 $ENDCMP
 #
 #End Doc Library
