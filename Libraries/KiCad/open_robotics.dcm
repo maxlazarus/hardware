@@ -12,7 +12,7 @@ F ../../Datasheets/022057045_sd.pdf
 $ENDCMP
 #
 $CMP 22-03-5045
-D 4-pin male connector - PCB mount header
+D 4-pin male vert connector - PCB mount header
 K Connector Dynamixel
 F ../../Datasheets/022057045_sd.pdf
 $ENDCMP
@@ -24,9 +24,15 @@ F ../../Datasheets/022057045_sd.pdf
 $ENDCMP
 #
 $CMP 22-05-7045
-D 4-pin male connector - PCB mount header
-K Connector Dynamixel
+D 4-pin male right angle connector - PCB mount header
+K Connector Dynamixel Right-angle
 F ../../Datasheets/022057045_sd.pdf
+$ENDCMP
+#
+$CMP 70543-0036
+D 2-pin male vert connector - PCB mount header
+K Connector SL Molex Vertical
+F C:/Users/Maxim/Documents/GitHub/openrobotics/hardware/Datasheets/705530037_sd.pdf
 $ENDCMP
 #
 $CMP 70553-0037
@@ -46,10 +52,27 @@ K Regulator
 F ../../Datasheets/AP7313.pdf
 $ENDCMP
 #
+$CMP CRF2512-FX-R005ELF
+D 0.005 ohm 2W 2512 1% resistor
+K Current-sense Resistor
+$ENDCMP
+#
 $CMP L4941BDT-TR
 D 5V regulator 1A max 30V input
 K Regulator
 F ../../Datasheets/STMicroelectronics-L4941BDT-TR-datasheet.pdf
+$ENDCMP
+#
+$CMP LM1084ISX-ADJ/NOPB
+D Adjustable regulator 5A max 29V input
+K Regulator
+F ../../Datasheets/lm1084.pdf
+$ENDCMP
+#
+$CMP LM1085ISX-ADJ/NOPB
+D Adjustable regulator 3A max 29V input
+K Regulator
+F ../../Datasheets/lm1085.pdf
 $ENDCMP
 #
 $CMP LM4040D20IDBZR
@@ -63,6 +86,12 @@ K Regulator
 F ../../Datasheets/lp2992.pdf
 $ENDCMP
 #
+$CMP LT6100CDD#PBF
+D High-side current sense op-amp
+K Current-sense Amplifier
+F ../../Datasheets/6100fd.pdf
+$ENDCMP
+#
 $CMP LTST-C170KFKT
 D LED yellow
 K LED
@@ -71,6 +100,18 @@ $ENDCMP
 $CMP LTST-C170KGKT
 D LED green
 K LED
+$ENDCMP
+#
+$CMP MULTICOMP_24.243.1
+D 4mm banana jack receptacle red
+K Jack Connection
+F ../../Datasheets/1901211.pdf
+$ENDCMP
+#
+$CMP MULTICOMP_24.243.2
+D 4mm banana jack receptacle black
+K Jack Connection
+F ../../Datasheets/1901211.pdf
 $ENDCMP
 #
 $CMP NC7ST32
@@ -95,6 +136,12 @@ $CMP TC7W241FUTE12LF
 D 2-element non-inverting open-collector buffer
 K Buffer Open-collector
 F ../../Datasheets/TC7W241FU_datasheet_en_20141118.pdf
+$ENDCMP
+#
+$CMP UA78M05CDCYR
+D 5V regulator 500mA max 25V input
+K Regulator
+F ../../Datasheets/ua78m05.pdf
 $ENDCMP
 #
 #End Doc Library
