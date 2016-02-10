@@ -57,6 +57,12 @@ D 0.005 ohm 2W 2512 1% resistor
 K Current-sense Resistor
 $ENDCMP
 #
+$CMP GW12LCP
+D 1x SPDT surface mount rocker switch
+K Switch
+F ../../Datasheets/GW.pdf
+$ENDCMP
+#
 $CMP L4941BDT-TR
 D 5V regulator 1A max 30V input
 K Regulator
@@ -100,6 +106,18 @@ $ENDCMP
 $CMP LTST-C170KGKT
 D LED green
 K LED
+$ENDCMP
+#
+$CMP MIC29302AWU-TR
+D Adjustable regulator 3A max 60V input
+K Regulator
+F ../../Datasheets/mic29150.pdf
+$ENDCMP
+#
+$CMP MULTICOMP_24.243.1
+D 4mm banana jack receptacle red
+K Jack Connection
+F ../../Datasheets/1901211.pdf
 $ENDCMP
 #
 $CMP MULTICOMP_24.243.2

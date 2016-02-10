@@ -10,28 +10,27 @@ Blue solder mask
 
 LAYERS
 ------
-B_Cu		-Back copper
-B_Mask		-Back solder mask
-B_SilkS		-Back silkscreen
+GBL		-Back copper
+GBS		-Back solder mask
+GBO		-Back silkscreen
 Dwgs_User	-Dimensions
-Edge_Cuts	-Board outline
-F_Cu		-Front copper
-F_Mask		-Front solder mask
-F_Paste		-Front paste	
-F_SilkS		-Front silkscreen
-In1_Cu		-Interior copper 1
-In2_Cu		-Interior copper 2
+GKO		-Board outline
+GTL		-Front copper
+GTS		-Front solder mask
+GTO		-Front silkscreen
+G2L		-Interior copper 1
+G3L		-Interior copper 2
 
 LAYER STACK
 -----------
-F_Cu
-In1_Cu
-In2_Cu
-B_Cu
+GTL
+G2L
+G3L
+GBL
 
 DRILLS
 ------
 There are two drill files available:
 
 modular8_rev3-drl_map.gbr
-modular8_rev3.drl
+modular8_rev3.XLN
