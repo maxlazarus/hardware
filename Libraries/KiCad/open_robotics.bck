@@ -114,6 +114,12 @@ K Regulator
 F ../../Datasheets/mic29150.pdf
 $ENDCMP
 #
+$CMP MIC5219-5.0YM5-TR
+D 5V regulator 500mA max 20V input
+K Regulator
+F ../../Datasheets/mic5219.pdf
+$ENDCMP
+#
 $CMP MULTICOMP_24.243.1
 D 4mm banana jack receptacle red
 K Jack Connection
