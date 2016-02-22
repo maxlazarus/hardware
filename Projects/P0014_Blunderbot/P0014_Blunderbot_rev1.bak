@@ -518,7 +518,7 @@ Text Label 7800 3850 0    60   ~ 0
 TRIG2
 Text Label 7800 3950 0    60   ~ 0
 ECHO2
-Text Label 7800 2850 0    60   ~ 0
+Text Label 7800 3150 0    60   ~ 0
 TXDEN
 $Comp
 L LTST-C170KGKT D2
@@ -701,7 +701,7 @@ Wire Wire Line
 Wire Wire Line
 	2950 3550 2950 4050
 Connection ~ 2950 4050
-Text Label 7800 3150 0    60   ~ 0
+Text Label 7800 2850 0    60   ~ 0
 SERVO_EN
 Text Label 3050 4500 0    60   ~ 0
 SERVO_EN
