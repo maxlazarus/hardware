@@ -108,6 +108,11 @@ D LED green
 K LED
 $ENDCMP
 #
+$CMP MHSS1105
+D 2x SPST NO surface mount DIP switch
+K Switch
+$ENDCMP
+#
 $CMP MIC29302AWU-TR
 D Adjustable regulator 3A max 60V input
 K Regulator

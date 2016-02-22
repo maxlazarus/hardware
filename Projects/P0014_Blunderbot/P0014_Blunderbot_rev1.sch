@@ -375,8 +375,8 @@ Wire Wire Line
 Wire Wire Line
 	1950 2300 1950 2850
 Connection ~ 1950 2850
-Text Label 2100 2850 0    60   ~ 0
-9-12V_IN
+Text Label 1950 2300 0    60   ~ 0
+9-10V_IN
 Wire Wire Line
 	1650 2400 1750 2400
 Wire Wire Line
@@ -384,13 +384,10 @@ Wire Wire Line
 Wire Wire Line
 	1750 2950 1650 2950
 Wire Wire Line
-	3150 3050 2650 3050
-Wire Wire Line
 	2650 2850 2650 3450
 Connection ~ 2650 2850
 Wire Wire Line
 	2650 3450 3150 3450
-Connection ~ 2650 3050
 Wire Wire Line
 	3150 2950 2850 2950
 Wire Wire Line
@@ -402,7 +399,7 @@ Wire Wire Line
 Connection ~ 2850 4050
 Connection ~ 1850 2750
 Wire Wire Line
-	2250 3250 2250 2850
+	2250 2550 2250 3250
 Connection ~ 2250 2850
 Wire Wire Line
 	2250 3550 2250 4050
@@ -423,10 +420,8 @@ Wire Wire Line
 	7800 4750 7800 4050
 Text Label 7800 4750 0    60   ~ 0
 ~RESET
-Text Label 7800 3350 0    60   ~ 0
-MISO
 Text Label 7800 3450 0    60   ~ 0
-MOSI
+MOSI/PWM2
 Text Label 7800 3250 0    60   ~ 0
 SCK
 Text Label 7800 2950 0    60   ~ 0
@@ -434,11 +429,7 @@ TX
 Text Label 7800 3050 0    60   ~ 0
 RX
 Wire Wire Line
-	8600 2950 8600 2450
-Wire Wire Line
 	8600 2450 9050 2450
-Text Label 8300 2950 0    60   ~ 0
-PWM1
 Wire Wire Line
 	9050 2350 8800 2350
 $Comp
@@ -521,23 +512,23 @@ F 3 "" H 9600 4400 50  0000 C CNN
 	1    9600 4400
 	1    0    0    -1  
 $EndComp
-Text Label 9300 3550 0    60   ~ 0
+Text Label 7800 3550 0    60   ~ 0
 TRIG1
-Text Label 9300 4200 0    60   ~ 0
+Text Label 7800 3850 0    60   ~ 0
 TRIG2
-Text Label 9300 4300 0    60   ~ 0
+Text Label 7800 3950 0    60   ~ 0
 ECHO2
-Text Label 7800 2850 0    60   ~ 0
+Text Label 7800 3150 0    60   ~ 0
 TXDEN
 $Comp
 L LTST-C170KGKT D2
 U 1 1 56A60844
-P 5550 5000
-F 0 "D2" V 5500 4850 50  0000 C CNN
-F 1 "LTST-C170KGKT" V 5600 4600 50  0000 C CNN
-F 2 "LEDs:LED_0805" V 5550 5000 50  0001 C CNN
-F 3 "" H 5550 5000 50  0000 C CNN
-	1    5550 5000
+P 5850 5000
+F 0 "D2" V 5800 4850 50  0000 C CNN
+F 1 "LTST-C170KGKT" V 5900 4600 50  0000 C CNN
+F 2 "LEDs:LED_0805" V 5850 5000 50  0001 C CNN
+F 3 "" H 5850 5000 50  0000 C CNN
+	1    5850 5000
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -552,9 +543,9 @@ F 3 "" H 4150 5100 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5100 4800 5550 4800
+	5100 4800 5850 4800
 Text Label 4600 4800 2    60   ~ 0
-MISO
+MISO/PWM1
 Text Label 4600 4900 2    60   ~ 0
 SCK
 Text Label 4600 5000 2    60   ~ 0
@@ -564,9 +555,9 @@ Wire Wire Line
 Text Label 5100 4800 0    60   ~ 0
 VCC
 Text Label 5100 4900 0    60   ~ 0
-MOSI
+MOSI/PWM2
 Wire Wire Line
-	5550 5200 5550 5400
+	5850 5200 5850 5400
 Wire Wire Line
 	4150 5300 4150 5500
 Wire Wire Line
@@ -648,7 +639,7 @@ Wire Wire Line
 Wire Wire Line
 	4250 5500 4250 5400
 Wire Wire Line
-	4250 5400 5550 5400
+	4250 5400 5850 5400
 Wire Wire Line
 	4250 5900 4250 6100
 Wire Wire Line
@@ -671,21 +662,15 @@ Wire Wire Line
 Wire Wire Line
 	9050 1900 8950 1900
 Wire Wire Line
-	8950 1900 8950 3350
-Wire Wire Line
-	8950 3350 7800 3350
-Text Label 8300 3350 0    60   ~ 0
-PWM2
-Wire Wire Line
-	8600 2950 7800 2950
+	8950 1900 8950 3450
+Text Label 7800 3350 0    60   ~ 0
+MISO/PWM1
 Wire Wire Line
 	9600 3550 7800 3550
 Wire Wire Line
 	9600 3650 8700 3650
 Wire Wire Line
 	8700 3650 8700 3750
-Wire Wire Line
-	8700 3750 7800 3750
 Wire Wire Line
 	7800 3850 8700 3850
 Wire Wire Line
@@ -698,19 +683,8 @@ Wire Wire Line
 	8600 4300 8600 3950
 Wire Wire Line
 	8600 3950 7800 3950
-Text Label 9300 3650 0    60   ~ 0
+Text Label 7800 3750 0    60   ~ 0
 ECHO1
-$Comp
-L MIC5219-5.0YM5-TR U2
-U 1 1 56C977E3
-P 3700 2850
-F 0 "U2" H 4000 2500 60  0000 C CNN
-F 1 "MIC5219-5.0YM5-TR" H 3700 3000 60  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 3700 2850 60  0001 C CNN
-F 3 "" H 3700 2850 60  0000 C CNN
-	1    3700 2850
-	1    0    0    -1  
-$EndComp
 $Comp
 L MIC5219-5.0YM5-TR U3
 U 1 1 56C97863
@@ -727,9 +701,7 @@ Wire Wire Line
 Wire Wire Line
 	2950 3550 2950 4050
 Connection ~ 2950 4050
-Wire Wire Line
-	7800 3150 8300 3150
-Text Label 8300 3150 0    60   ~ 0
+Text Label 7800 2850 0    60   ~ 0
 SERVO_EN
 Text Label 3050 4500 0    60   ~ 0
 SERVO_EN
@@ -768,4 +740,42 @@ Wire Wire Line
 	5000 4000 5000 4050
 Connection ~ 5000 4050
 Connection ~ 5000 3450
+$Comp
+L MIC5219-5.0YM5-TR U2
+U 1 1 56C977E3
+P 3700 2850
+F 0 "U2" H 4000 2500 60  0000 C CNN
+F 1 "MIC5219-5.0YM5-TR" H 3700 3000 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 3700 2850 60  0001 C CNN
+F 3 "" H 3700 2850 60  0000 C CNN
+	1    3700 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 3750 7800 3750
+$Comp
+L MHSS1105 S1
+U 1 1 56C9F259
+P 2750 2550
+F 0 "S1" H 2950 2375 60  0000 C CNN
+F 1 "MHSS1105" H 2750 2775 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 2860 2550 60  0001 C CNN
+F 3 "" H 2860 2550 60  0000 C CNN
+	1    2750 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 2650 3100 2650
+Wire Wire Line
+	3100 2650 3100 3050
+Wire Wire Line
+	3100 3050 3150 3050
+Wire Wire Line
+	2450 2550 2250 2550
+Wire Wire Line
+	8600 2450 8600 3350
+Wire Wire Line
+	8600 3350 7800 3350
+Wire Wire Line
+	8950 3450 7800 3450
 $EndSCHEMATC
