@@ -126,6 +126,11 @@ K Regulator
 F ../../Datasheets/mic5219.pdf
 $ENDCMP
 #
+$CMP MMZ1608S601A
+D 500mA Ferrite bead
+K ferrite bead
+$ENDCMP
+#
 $CMP MULTICOMP_24.243.1
 D 4mm banana jack receptacle red
 K Jack Connection
@@ -153,13 +158,13 @@ $ENDCMP
 $CMP SN65176BDR
 D Differential TX/RX bus driver/receiver
 K RS485
-F ../../Datasheets/sn65176b.pdf
+F ../../../datasheets/sn65176b.pdf
 $ENDCMP
 #
 $CMP TC7W241FUTE12LF
 D 2-element non-inverting open-collector buffer
 K Buffer Open-collector
-F ../../Datasheets/TC7W241FU_datasheet_en_20141118.pdf
+F ../../../datasheets/TC7W241FU_datasheet_en_20141118.pdf
 $ENDCMP
 #
 $CMP UA78M05CDCYR

@@ -1,4 +1,4 @@
-update=2/20/2016 11:21:44 PM
+update=3/6/2016 9:37:22 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,3 +59,4 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=C:/Users/Maxim/Documents/GitHub/openrobotics/hardware/Libraries/KiCad/open_robotics
+LibName31=C:/Users/Maxim/Documents/GitHub/macrofab_KiCad/macrofab
