@@ -29,6 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:open_robotics
+LIBS:macrofab
 LIBS:P0014_Blunderbot_rev1-cache
 EELAYER 25 0
 EELAYER END
