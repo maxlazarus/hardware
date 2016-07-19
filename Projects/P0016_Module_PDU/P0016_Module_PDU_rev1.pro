@@ -1,6 +1,6 @@
-update=2/7/2016 11:45:52 PM
+update=7/18/2016 9:29:37 PM
 version=1
-last_client=eeschema
+last_client=kicad
 [general]
 version=1
 RootSch=
@@ -29,7 +29,7 @@ version=1
 NetIExt=net
 [eeschema]
 version=1
-LibDir=
+LibDir=../../../../macrofab_KiCad
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -61,3 +61,4 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=C:/Users/Maxim/Documents/GitHub/openrobotics/hardware/Libraries/KiCad/open_robotics
+LibName31=macrofab
