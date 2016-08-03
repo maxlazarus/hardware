@@ -63,6 +63,10 @@ K Switch
 F ../../Datasheets/GW.pdf
 $ENDCMP
 #
+$CMP ICSP_02X03
+D Connector 02x03
+$ENDCMP
+#
 $CMP L4941BDT-TR
 D 5V regulator 1A max 30V input
 K Regulator
@@ -105,6 +109,11 @@ $ENDCMP
 #
 $CMP LTST-C170KGKT
 D LED green
+K LED
+$ENDCMP
+#
+$CMP LTST-C170KRKT
+D LED red
 K LED
 $ENDCMP
 #
