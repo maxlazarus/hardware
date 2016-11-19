@@ -164,6 +164,12 @@ K OR Logic
 F ../../Datasheets/Fairchild_Semiconductor-NC7ST32M5X-datasheet.pdf
 $ENDCMP
 #
+$CMP NCP1117ST50T3GOSCT
+D 5V regulator 1A max 20V input
+K Regulator
+F ../../datasheets/NCP1117-D.PDF
+$ENDCMP
+#
 $CMP SN65176BDR
 D Differential TX/RX bus driver/receiver
 K RS485
